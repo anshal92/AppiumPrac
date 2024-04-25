@@ -12,7 +12,7 @@ import pages.homePage.HomePageActions;
 
 public class FirstTest extends TestDP {
 
-    @Test(dataProvider = "testData")
+    @Test(dataProvider = "testData") //
     public void firstTest(TestCaseType caseType, String name, String email, String passWord) {
         Logger.debug("XXX Running the scenario -> " + caseType.toString());
         HomePageActions homePageActions = new HomePageActions().clickCreateAccountBtn()
